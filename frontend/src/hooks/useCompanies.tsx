@@ -53,7 +53,7 @@ export function CompaniesProvider({ children }: CompaniesProviderProps) {
         newCompany,
       ]);
     } catch (error) {
-      console.log(error);
+      throw new Error(error.message);
     }
   }
 
@@ -73,7 +73,7 @@ export function CompaniesProvider({ children }: CompaniesProviderProps) {
 
       setCompanies(companiesList);
     } catch (error) {
-      console.log(error);
+      throw new Error(error.message);
     }
   }
 
@@ -85,7 +85,7 @@ export function CompaniesProvider({ children }: CompaniesProviderProps) {
 
       setCurrentCompany(company);
     } catch (error) {
-      console.log(error);
+      throw new Error(error.message);
     }
   }
 
@@ -99,7 +99,7 @@ export function CompaniesProvider({ children }: CompaniesProviderProps) {
 
       return response.data;
     } catch (error) {
-      console.log(error);
+      throw new Error(error.message);
     }
   }
 

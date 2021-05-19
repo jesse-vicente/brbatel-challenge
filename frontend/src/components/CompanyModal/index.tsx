@@ -26,7 +26,6 @@ export function CompanyModal( { title, visible, onOk, onCancel }: CompanyModalPr
   const { currentCompany, createCompany, updateCompany } = useCompanies();
 
   useEffect(() => {
-    console.log('useEffect')
     clearInputs();
 
     if (currentCompany) {

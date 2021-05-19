@@ -22,8 +22,6 @@ export function SearchBar() {
     const companiesList = response.data;
 
     setCompanies(companiesList);
-
-    console.log(companiesList);
   }
 
   return (
