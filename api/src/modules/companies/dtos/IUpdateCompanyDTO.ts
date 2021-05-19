@@ -2,7 +2,7 @@ export default interface IUpdateCompanyDTO {
   id: string;
   name?: string;
   cnpj?: string;
-  demand?: number;
+  demand?: string;
   annual_billing?: string;
   about?: string;
 }
